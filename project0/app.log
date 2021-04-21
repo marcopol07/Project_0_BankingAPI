@@ -1,0 +1,110 @@
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 630-832-001
+werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:15:12] "[37mGET / HTTP/1.1[0m" 200 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:15:32] "[33mGET /clients/-1 HTTP/1.1[0m" 404 -
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 630-832-001
+werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:16:11] "[37mGET / HTTP/1.1[0m" 200 -
+werkzeug - INFO -  * Restarting with stat
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 630-832-001
+werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+root - ERROR - User input resulted in KeyError.
+Traceback (most recent call last):
+  File "C:\Users\marcl\PycharmProjects\project0\controllers\bank_controller.py", line 38, in post_client
+    client = Client.json_parse(request.json)
+  File "C:\Users\marcl\PycharmProjects\project0\models\client.py", line 22, in json_parse
+    client.password = json["password"]
+KeyError: 'password'
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:49] "[31m[1mPOST /clients HTTP/1.1[0m" 400 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:49] "[37mPOST /clients HTTP/1.1[0m" 201 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:49] "[33mGET /clients/-1 HTTP/1.1[0m" 404 -
+root - WARNING - Invalid Client ID input.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:49] "[31m[1mGET /clients/cat HTTP/1.1[0m" 400 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:49] "[37mGET /clients/1 HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:49] "[37mGET /clients HTTP/1.1[0m" 200 -
+root - WARNING - Invalid Client ID input.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:49] "[31m[1mPUT /clients/dogs HTTP/1.1[0m" 400 -
+root - WARNING - User input resulted in KeyError.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:49] "[31m[1mPUT /clients/7 HTTP/1.1[0m" 400 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:50] "[37mPUT /clients/2 HTTP/1.1[0m" 200 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:50] "[33mPUT /clients/-1 HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:50] "[37mDELETE /clients/31 HTTP/1.1[0m" 204 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:50] "[33mDELETE /clients/-1 HTTP/1.1[0m" 404 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:50] "[33mPOST /clients/-1/accounts HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:50] "[37mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:50] "[37mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:50] "[37mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:51] "[37mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+root - WARNING - Invalid Client ID input.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:51] "[31m[1mPOST /clients/birds/accounts HTTP/1.1[0m" 400 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:51] "[37mGET /clients/7/accounts HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:51] "[37mGET /clients/1/accounts?amountGreaterThan=50&amountLessThan=200 HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:51] "[37mGET /clients/1/accounts HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:51] "[37mGET /clients/1/accounts/1 HTTP/1.1[0m" 200 -
+root - WARNING - Invalid Client ID input.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:51] "[31m[1mGET /clients/cats/accounts/1 HTTP/1.1[0m" 400 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:51] "[33mGET /clients/-1/accounts/1 HTTP/1.1[0m" 404 -
+root - WARNING - No account found with ID -1 for client 2.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:51] "[33mPUT /clients/2/accounts/-1 HTTP/1.1[0m" 404 -
+root - WARNING - Invalid Account ID input.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:52] "[31m[1mPUT /clients/1/accounts/cat HTTP/1.1[0m" 400 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:52] "[33mPUT /clients/-1/accounts/17 HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:52] "[37mPUT /clients/1/accounts/17 HTTP/1.1[0m" 200 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:52] "[33mDELETE /clients/-1/accounts/1 HTTP/1.1[0m" 404 -
+root - WARNING - No account found with ID -1 for client with ID 1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:52] "[33mDELETE /clients/1/accounts/-1 HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:52] "[37mDELETE /clients/1/accounts/42 HTTP/1.1[0m" 204 -
+root - WARNING - No account found with ID -1 for client 1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:52] "[33mPATCH /clients/1/accounts/-1 HTTP/1.1[0m" 404 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:52] "[33mPATCH /clients/-1/accounts/1 HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:53] "[37mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 200 -
+root - WARNING - Attempted to withdraw more funds than exist in account.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:53] "[31m[1mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 422 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:53] "[37mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 200 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:53] "[33mPATCH /clients/-1/accounts/1 HTTP/1.1[0m" 404 -
+root - WARNING - No account found with ID -1 for client 1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:53] "[33mPATCH /clients/1/accounts/-1 HTTP/1.1[0m" 404 -
+root - WARNING - No account found with ID -1 for client 1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:54] "[33mPATCH /clients/1/accounts/1/transfer/-1 HTTP/1.1[0m" 404 -
+root - WARNING - No account found with ID -1 for client 1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:54] "[33mPATCH /clients/1/accounts/-1/transfer/2 HTTP/1.1[0m" 404 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:54] "[33mPATCH /clients/-1/accounts/1/transfer/2 HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:54] "[31m[1mPATCH /clients/1/accounts/1/transfer/2 HTTP/1.1[0m" 400 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:54] "[31m[1mPATCH /clients/1/accounts/1/transfer/2 HTTP/1.1[0m" 400 -
+root - WARNING - Attempted to withdraw more funds than exist in account.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:47:54] "[31m[1mPATCH /clients/1/accounts/1/transfer/2 HTTP/1.1[0m" 422 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:49:22] "[37mPOST /clients HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:49:42] "[37mGET /clients HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:49:50] "[37mGET /clients/1 HTTP/1.1[0m" 200 -
+root - WARNING - No client found with ID -1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:49:58] "[33mGET /clients/-1 HTTP/1.1[0m" 404 -
+root - WARNING - Invalid Client ID input.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:50:02] "[31m[1mGET /clients/cat HTTP/1.1[0m" 400 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:50:20] "[37mPUT /clients/2 HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:50:38] "[37mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:50:57] "[37mGET /clients/1/accounts HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:51:07] "[37mGET /clients/1/accounts?amountGreaterThan=50&amountLessThan=200 HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:51:23] "[37mGET /clients/1/accounts/1 HTTP/1.1[0m" 200 -
+root - WARNING - No account found with ID 10000 for client 1.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:51:38] "[33mGET /clients/1/accounts/10000 HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:51:51] "[37mPUT /clients/1/accounts/17 HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:52:11] "[37mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:52:21] "[37mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 200 -
+root - WARNING - Attempted to withdraw more funds than exist in account.
+werkzeug - INFO - 127.0.0.1 - - [21/Apr/2021 10:55:06] "[31m[1mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 422 -
